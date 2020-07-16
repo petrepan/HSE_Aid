@@ -1,9 +1,6 @@
 <?php
     require('config.php');
 
-    $msg = '';
-    $msgClass = '';
-
     //check for a submit
     if(isset($_POST['submit'])){
         // get form data
