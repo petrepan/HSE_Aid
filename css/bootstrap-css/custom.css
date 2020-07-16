@@ -161,6 +161,28 @@ header{
     text-align: center;
 }
 
+/*Confirm css*/
+.confirm{
+    padding: 10px;
+}
+
+.confirm h3{
+    font-size: 32px;
+    padding: 5px;
+}
+
+.confirm p{
+    padding: 5px;
+}
+
+.emailimg{
+    width: 100px;
+}
+
+.emailimg img{
+    width: 100%;
+}
+
 @media screen and (max-width: 1450px){
    .safety {
        width: 450px;
@@ -365,11 +387,13 @@ header{
 
     .greatworkimg {
         margin: 0 auto;
+        order: 1!important;
     }
 
     .countdown {
         text-align: center;
-        width: 100%;
+        order: 0;
+        width: 80%;
         margin: 0 auto;
         justify-content: center;
     }

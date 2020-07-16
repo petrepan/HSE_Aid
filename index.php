@@ -12,14 +12,12 @@
         $sql = "INSERT INTO emails(email) VALUES('$email')";
 
         if(mysqli_query($conn, $sql)){
-           
-            $msg = 'Yay!! Thank you for Suscribing. You have been added to our notification list.';
-            $msgClass = 'alert-success';
-            // header('Location: newsletter.php');
+            session_start(); // Start the session
+
+		    $_SESSION['email'] = htmlentities($_POST['email']);
+            header('Location: confirm.php');
              
         }else{
-            $msg = 'An error occurred during submission. Try again.';
-            $msgClass = 'alert-danger';
             echo 'ERROR: ' . mysqli_error($conn);
         }
     }
@@ -54,16 +52,6 @@
                 conditions, and make appropriate report.</p>
         </div> 
     </div>
-   
-    <?php if($msg != ''): ?>
-         <div style="width: 400px; height: 100px; position:absolute; top:0; right:0;" class="alert <?php echo $msgClass; ?> alert-dismissible fade show ">
-             <div><?php echo $msg; ?></div>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-        </div>
-           
-    	<?php endif; ?>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="container" id="form">
         <div class="position-relative">
             <input type="email" name="email" id="email" required>
