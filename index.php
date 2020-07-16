@@ -35,7 +35,7 @@
   <body>
     <header class="text-light">
     <nav class="navbar navbar-light container py-md-4">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
             <img src="img/SafetyLogo.png" width="50" height="40" alt="" loading="lazy">
         </a>
     </nav>

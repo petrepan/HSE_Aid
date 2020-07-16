@@ -1,8 +1,8 @@
 <?php
     //create connection
     $host = 'localhost';
-    $user = 'root';
-    $pass = '123456';
+    $user = 'b0437c18462dab';
+    $pass = '1feb0731';
     $db = 'newsletter';
 
     $conn = mysqli_connect($host, $user, $pass, $db);
