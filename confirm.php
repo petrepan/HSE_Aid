@@ -1,4 +1,6 @@
 <?php
+    require('config.php');
+
   session_start();
 	$email = $_SESSION['email'];
 ?>
