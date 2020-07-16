@@ -28,8 +28,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/safetyapp/css/bootstrap-css/custom.css" />
-    <link rel="stylesheet" href="/safetyapp/css/bootstrap-css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bootstrap-css/custom.css" />
+    <link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css" />
     <title>Safety App</title>
   </head>
   <body>
@@ -40,7 +40,7 @@
         </a>
     </nav>
     <div class="safety">
-        <img src="/safetyapp/img/safetyimg.png" alt="safety">
+        <img src="/img/safetyimg.png" alt="safety">
     </div>
     <div class="header-text container py-5">
         <div class="py-3">
@@ -60,7 +60,7 @@
     </form>
     
     <div class="phone-graphic">
-        <img src="/safetyapp/img/phone1img.png" alt="phone-graphic">
+        <img src="/img/phone1img.png" alt="phone-graphic">
     </div>
     <div class="wave-container">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -74,7 +74,7 @@
     <section class="py-5 features">
         <div class="d-flex featurescontainer flex-column container py-5 justify-content-around flex-md-row">
             <div class="phone-track pt-lg-3">
-                <img src="/safetyapp/img/Phone2img.png" alt="phone-graphic2">
+                <img src="/img/Phone2img.png" alt="phone-graphic2">
             </div>
             <div class="features-text pt-lg-3">
                 <h4 class="text-uppercase font-weight-bold pb-4">features</h4>
@@ -89,7 +89,7 @@
         </div>
     </section>
     <div class="position-relative text-center">
-        <img class="w-100" src="/safetyapp/img/wave2.svg" alt="wave">
+        <img class="w-100" src="/img/wave2.svg" alt="wave">
     </div>
     <div class="text-center mb-4 p-5">
         <h3 class="text-uppercase">
@@ -97,22 +97,22 @@
         </h3>
         <div class="d-flex p-4 align-items-center justify-content-center flex-column flex-md-row">
             <div class="d-flex mr-3 align-items-center">
-                <img src="/safetyapp/img/mark.png" alt="mark">
+                <img src="/img/mark.png" alt="mark">
                 <p>Work made easier</p>
             </div>
             <div class="d-flex mr-3 align-items-center">
-                <img src="/safetyapp/img/mark.png" alt="mark">
+                <img src="/img/mark.png" alt="mark">
                 <p>Saves time and energy</p>
             </div>
             <div class="d-flex mr-3 align-items-center">
-                <img src="/safetyapp/img/mark.png" alt="mark">
+                <img src="/img/mark.png" alt="mark">
                 <p>Accurate KPI keeping</p>
             </div>
         </div>
     </div>
     <div class="countdownsection d-flex justify-content-around flex-md-row flex-column mt-5 py-5">
         <div class="greatworkimg">
-            <img src="/safetyapp/img/greatwork.png" alt="greatwork">
+            <img src="/img/greatwork.png" alt="greatwork">
         </div>
         <div class="text-center font-weight-bold">
             <div class="countdown my-4 d-flex align-items-center font-weight-bold p-4">
@@ -142,9 +142,9 @@
             &copy;2020 HSE-AID. All rights reserved
         </div>
     </footer>
-    <script src="/safetyapp/js/app.js"></script>
-    <script src="/safetyapp/js/bootstrap-js/jquery.js"></script>
-    <script src="/safetyapp/js/bootstrap-js/popper.js"></script>
-    <script src="/safetyapp/js/bootstrap-js/bootstrap.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/bootstrap-js/jquery.js"></script>
+    <script src="/js/bootstrap-js/popper.js"></script>
+    <script src="/js/bootstrap-js/bootstrap.js"></script>
   </body>
 </html>
