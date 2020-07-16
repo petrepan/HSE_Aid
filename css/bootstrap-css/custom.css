@@ -8,125 +8,248 @@
     --font-monte: Montserrat, 'san-serif';
 }
 
-body{
-    font-family: var(--font-monte)!important;
+body {
+    font-family: var(--font-monte) !important;
     background-color: var(--white);
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
     margin: 0 auto;
 }
 
 
-header{
+header {
     position: relative;
-    background-color: var(--blue-color);
+    background: url("/img/wavehero.png") no-repeat bottom left/cover;
+    height: 75vh;
 }
 
-.safety{
-    position: absolute;
-    width: 450px;
-    top: 13%;
-    right: 17%;
+
+.wave-hero {
+    height: 650px;
 }
 
-.safety img{
+.wave-hero img {
     width: 100%;
+    height: 100%;
 }
 
-.header-text h2{
+.header-text h2 {
     font-size: 40px;
 }
 
-.header-text p:first-child{
+.header-text p:first-child {
     font-size: 32px;
 }
 
-.header-text p:last-child{
+.header-text p:last-child {
     font-size: 15px;
 }
 
-.header-text p{
-    width: 50%!important;
+.header-text p {
+    width: 50% !important;
 }
 
-#form div{
-    width: 30%;
-    height: 40px;
-}
 
-#form input[type="email"]{
-    padding: 6px 10px;
-    position: absolute;
-    left: 0;
-    border-radius: 10px;
+#form input[type="email"] {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border: none;
-    height: 100%;
-    width: 80%;
-    padding: 0 15px;
+    padding: 11px;
 }
 
-#form input[type="email"]:focus{
+#form input[type="email"]:focus {
     outline: none;
     border: none;
 }
 
-#form input[type="submit"]{
-    position: absolute;
-    right: -8%;
+#form input[type="submit"] {
+    margin-left: -7px;
     border-radius: 10px;
-    height: 100%;
 }
 
-.alert{
-    z-index: 99999999999999;
-}
-
-.phone-graphic{
+.safety {
     position: absolute;
-    right: 17%;
-    bottom: 7%;
     width: 450px;
-    z-index: 1;
+    top: 13%;
+    right: 16%;
 }
 
-.phone-graphic img{
+.safety img {
     width: 100%;
 }
 
-
-.wave-container {
-    position: relative;
-    color: #FFF;
-    text-align: center;
-    overflow: hidden;
-
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000000000000;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }
 
-.wave-container>svg {
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
     display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.content-wrap {
+    width: 250px;
+    margin: auto;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 60px !important;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 10000000000000000;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+
+.phone-graphic {
+    position: absolute;
+    right: 15%;
+    top: 33%;
+    display: flex;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mockup {
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wave-img {
+    transition: all .3s;
+}
+
+.wave-img:hover {
+    opacity: .9;
+    transform: scale(1.02);
+}
+
+.mockup img {
+    width: 100%;
+    height: auto;
+}
+
+.wave-mockup1 {
+    margin-top: 80px;
+}
+
+.wave-mockup2 {
+    margin-top: 40px;
+    margin-left: -50px;
+    z-index: -11;
+}
+
+.wave-mockup3 {
+    margin-left: -50px;
+    z-index: -12;
+}
+
+.featurescontainer {
+    display: flex;
+    justify-content: space-around;
 }
 
 .phone-track {
-    width: 400px;
+    display: flex;
 }
 
-.phone-track img {
-    width: 100% !important;
-    object-fit: contain !important;
+
+.features-mockup2 {
+    margin-left: -35px;
+    margin-top: 35px;
 }
 
-.features-text ul{
+.features-mockup3 {
+    margin-left: -35px;
+    margin-top: 70px;
+}
+
+.features-text ul {
     list-style: none;
 }
 
-.features-text li{
+.features-text li {
     padding-bottom: 45px;
     position: relative;
 }
 
-.features-text li::before{ 
+.features-text li::before {
     content: "";
     position: absolute;
     height: 10px;
@@ -137,92 +260,153 @@ header{
     background-color: var(--blue-color);
 }
 
-.greatworkimg{
+.benefits {
+    display: flex;
+}
+
+.benefits img {
+    width: 60px;
+}
+
+.greatworkimg {
     width: 250px;
     margin-bottom: -55px;
 }
 
-.greatworkimg img{
+.greatworkimg img {
     width: 100%;
 }
 
 
-.countdownsection{
+.countdownsection {
     background-color: var(--blue-color);
     color: var(--white);
 }
 
-.countdown{
+.countdown {
     border: 1px solid #fff;
 }
 
-.countdown div{
+.countdown div {
     padding: 10px;
     text-align: center;
 }
 
+.countdown span {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e60073, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 10px #ff4da6, 0 0 15px #ff4da6, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6;
+    }
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 10px #ff4da6, 0 0 10px #ff4da6, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 250px #ff4da6, 0 0 30px #ff4da6;
+    }
+}
+
 /*Confirm css*/
-.confirm{
+.confirm {
     padding: 10px;
 }
 
-.confirm h3{
+.confirm h3 {
     font-size: 32px;
     padding: 5px;
 }
 
-.confirm p{
+.confirm p {
     padding: 5px;
 }
 
-.emailimg{
+.emailimg {
     width: 100px;
 }
 
-.emailimg img{
+.emailimg img {
     width: 100%;
 }
 
-@media screen and (max-width: 1450px){
-   .safety {
-       width: 450px;
-       top: 13%;
-       right: 10%;
-   }
-
-   .phone-graphic {
-       right: 10%;
-       bottom: 0%;
-       width: 450px;
-   }
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1450px) {
     .safety {
-        width: 400px;
+        width: 450px;
         top: 13%;
         right: 10%;
     }
 
     .phone-graphic {
-        right: 10%;
-        bottom: 6%;
-        width: 400px;
+        right: 8%;
+        top: 34%;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
     }
 }
 
-@media screen and (max-width: 950px) {
-
+@media screen and (max-width: 1200px) {
     .safety {
         width: 400px;
-        top: 15%;
-        right: 10%;
+        top: 16%;
+        right: 6%;
+    }
+
+    .mockup {
+        width: 140px;
     }
 
     .phone-graphic {
-        right: 10%;
-        bottom: 0%;
-        width: 400px;
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    header {
+        height: 75vh;
+    }
+
+    .safety {
+        width: 380px;
+        top: 20%;
+        right: 8%;
+    }
+
+    .mockup {
+        width: 140px;
+    }
+
+
+    .phone-graphic {
+        position: absolute;
+        right: 8%;
+        top: 40%;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
     }
 }
 
@@ -230,7 +414,7 @@ header{
 
 @media screen and (max-width: 850px) {
     .safety {
-        display: none!important;
+        display: none !important;
     }
 
 
@@ -246,51 +430,21 @@ header{
         width: 90% !important;
     }
 
-    #form{
-        margin-top: -40px;
-        margin-bottom: 80px;
-    }
-
-    #form div {
-        width: 80%;
-        height: 40px;
-    }
-
-    #form input[type="email"] {
-        padding: 6px 10px;
-        position: absolute;
-        left: 0;
-        border-radius: 10px;
-        border: none;
-        height: 100%;
-        width: 80%;
-        padding: 0 15px;
-    }
-
-    #form input[type="email"]:focus {
-        outline: none;
-        border: none;
-    }
-
-    #form input[type="submit"] {
-        position: absolute;
-        right: -3%;
-        border-radius: 10px;
-        height: 100%;
+    .mockup {
+        width: 140px;
     }
 
     .phone-graphic {
-        right: 5%;
-        bottom: -260px;
-        width: 400px;
+        position: absolute;
+        right: 7%;
+        top: 68%;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
     }
 
-    .features{
-        padding-top: 0!important;
-    }
-
-    .phone-track {
-        visibility: hidden;
+    .features {
+        padding-top: 0 !important;
     }
 
     .phone-track img {
@@ -298,11 +452,11 @@ header{
         object-fit: contain !important;
     }
 
-    .greatworkimg{
+    .greatworkimg {
         margin: 0 auto;
     }
 
-    .countdown{
+    .countdown {
         text-align: center;
         width: 70%;
         margin: 0 auto;
@@ -311,6 +465,10 @@ header{
 }
 
 @media screen and (max-width: 768px) {
+
+    header {
+        height: 60vh;
+    }
 
     .safety {
         display: none !important;
@@ -329,56 +487,32 @@ header{
         width: 90% !important;
     }
 
-    #form {
-        margin-top: -40px;
-        margin-bottom: 80px;
-    }
-
-    #form div {
-        width: 80%;
-        height: 40px;
-    }
-
-    #form input[type="email"] {
-        padding: 6px 10px;
-        position: absolute;
-        left: 0;
-        border-radius: 10px;
-        border: none;
-        height: 100%;
-        width: 80%;
-        padding: 0 15px;
-    }
-
-    #form input[type="email"]:focus {
-        outline: none;
-        border: none;
-    }
-
-    #form input[type="submit"] {
-        position: absolute;
-        right: 5%;
-        border-radius: 10px;
-        height: 100%;
+    .mockup {
+        width: 140px;
     }
 
     .phone-graphic {
-        right: 5%;
-        bottom: -200px;
-        width: 400px;
+        position: absolute;
+        right: 7%;
+        top: 68%;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .phone-track {
+        margin: auto;
     }
 
     .features {
         margin-top: 25%;
     }
 
-    .featurescontainer{
-        flex-direction: column!important;
+    .featurescontainer {
+        flex-direction: column !important;
+
     }
 
-    .phone-track {
-        display: none;
-    }
 
     .phone-track img {
         width: 100% !important;
@@ -387,7 +521,7 @@ header{
 
     .greatworkimg {
         margin: 0 auto;
-        order: 1!important;
+        order: 1 !important;
     }
 
     .countdown {
@@ -399,28 +533,77 @@ header{
     }
 }
 
-@media screen and (max-width: 500px){
-     .phone-graphic {
-         bottom: -15%;
-         width: 200px;
-     }
+@media screen and (max-width: 500px) {
+    header {
+        height: 70vh;
+    }
 
-      #form input[type="email"] {
-          padding: 6px 10px;
-          position: absolute;
-          left: 0;
-          border-radius: 10px;
-          font-size: 10px!important;
-          border: none;
-          height: 100%;
-          width: 100%;
-          padding: 0 15px;
-      }
+    .header-text h2 {
+        font-size: 35px;
+    }
 
-      #form input[type="submit"] {
-          position: absolute;
-          right: -15%;
-          border-radius: 10px;
-          height: 100%;
-      }
+    .header-text p:first-child {
+        font-size: 25px;
+    }
+
+    .header-text p:last-child {
+        font-size: 13px;
+    }
+
+    .mockup {
+        width: 120px;
+    }
+
+    .wave-mockup2 {
+        margin-left: -30px;
+    }
+
+    .wave-mockup3 {
+        margin-left: -30px;
+    }
+
+    .phone-graphic {
+        position: absolute;
+        right: 4%;
+        top: 75%;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .phone-track {
+        margin-top: 20px;
+    }
+
+    .features-text h4 {
+        font-size: 26px;
+    }
+
+    .features-text {
+        font-size: 14px;
+    }
+
+    .features-text li {
+        margin-bottom: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .benefits div:nth-child(2) {
+        position: absolute;
+        top: 90%;
+        left: 15%;
+    }
+
+    .benefits p {
+        font-size: 13px;
+    }
+
+    .countdown span,
+    .countdown div {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }

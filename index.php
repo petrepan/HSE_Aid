@@ -27,20 +27,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/bootstrap-css/custom.css" />
     <link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <title>Safety App</title>
   </head>
   <body>
     <header class="text-light">
     <nav class="navbar navbar-light container py-md-4">
         <a class="navbar-brand" href="index.php">
-            <img src="img/SafetyLogo.png" width="50" height="40" alt="" loading="lazy">
+            <img src="img/SafetyLogo.png" width="60" height="45" alt="" loading="lazy">
         </a>
     </nav>
-    <div class="safety">
+    <div class="safety animate__animated animate__rubberBand">
         <img src="/img/safetyimg.png" alt="safety">
     </div>
-    <div class="header-text container py-5">
-        <div class="py-3">
+    <div class="header-text mt-3 container py-md-5">
+        <div class="py-1">
             <h2 class="text-uppercase">
                 hse_aid
             </h2>
@@ -49,31 +51,50 @@
                 conditions, and make appropriate report.</p>
         </div> 
     </div>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="container" id="form">
+    <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="container mb-2" id="form">
         <div class="position-relative">
-            <input type="email" name="email" id="email" required>
-            <input type="submit" name="submit" class="btn btn-success" value="Notify me">
+            <div class="d-flex">
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="submit" name="submit" class="btn btn-success" value="Notify me">
+            </div>
         </div>
     </form>
     
     <div class="phone-graphic">
-        <img src="/img/phone1img.png" alt="phone-graphic">
+        <div class="mockup wave-mockup1 animate__animated animate__bounceInLeft">
+            <img class="wave-img" src="/img/wavemockup1.png" alt="Light/Dark mode">
+        </div>
+        <div class="mockup wave-mockup2 animate__animated animate__bounceInDown">
+            <img class="wave-img" src="/img/wavemockup2.png" alt="Tool box topics">
+        </div>
+        <div class="mockup wave-mockup3 animate__animated animate__bounceInRight">
+            <img class="wave-img" src="/img/wavemockup3.png" alt="HSE_Aid">
+        </div>
     </div>
-    <div class="wave-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,266.7C672,256,768,224,864,192C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
+
+    <div id="myModal" class="modal">
+        <span class="close text-white">X</span>
+        <div class="content-wrap">
+            <img class="modal-content" id="img01">
+        </div>
+        <div id="caption"></div>
     </div>
-    
     </header>
+
     <section class="py-5 features">
-        <div class="d-flex featurescontainer flex-column container py-5 justify-content-around flex-md-row">
-            <div class="phone-track pt-lg-3">
-                <img src="/img/Phone2img.png" alt="phone-graphic2">
+        <div class="featurescontainer container pb-md-4 pt-5">
+            <div class="phone-track pt-md-4">
+               <div class="mockup features-mockup" data-aos="zoom-in-right">
+                   <img class="wave-img" src="/img/featuremockup1.png" alt="Safety report writing">
+               </div>
+               <div class="mockup features-mockup2" data-aos="zoom-out-up">
+                   <img class="wave-img" src="/img/featuremockup2.png" alt="General HSE Tracker">
+               </div>
+               <div class="mockup features-mockup3" data-aos="zoom-in-left">
+                   <img class="wave-img" src="/img/featuremockup3.png" alt="Job hazard analysis">
+               </div>
             </div>
-            <div class="features-text pt-lg-3">
+            <div class="features-text pt-lg-4">
                 <h4 class="text-uppercase font-weight-bold pb-4">features</h4>
                 <ul>
                     <li>Light/Dark mode</li>
@@ -88,30 +109,30 @@
     <div class="position-relative text-center">
         <img class="w-100" src="/img/wave2.svg" alt="wave">
     </div>
-    <div class="text-center mb-4 p-5">
-        <h3 class="text-uppercase">
+    <div class="mb-4 text-center py-5 container">
+        <h4 class="text-uppercase py-3">
             key benefits
-        </h3>
-        <div class="d-flex p-4 align-items-center justify-content-center flex-column flex-md-row">
-            <div class="d-flex mr-3 align-items-center">
+        </h4>
+        <div class="benefits container position-relative py-3">
+            <div class="d-flex m-3 align-items-center pr-2">
                 <img src="/img/mark.png" alt="mark">
                 <p>Work made easier</p>
             </div>
-            <div class="d-flex mr-3 align-items-center">
+            <div class="d-flex m-3 align-items-center pr-2">
                 <img src="/img/mark.png" alt="mark">
                 <p>Saves time and energy</p>
             </div>
-            <div class="d-flex mr-3 align-items-center">
+            <div class="d-flex m-3 align-items-center pr-2">
                 <img src="/img/mark.png" alt="mark">
                 <p>Accurate KPI keeping</p>
             </div>
         </div>
     </div>
-    <div class="countdownsection d-flex justify-content-around flex-md-row flex-column mt-5 py-5">
+    <div class="countdownsection d-flex mt-3 justify-content-around flex-md-row flex-column mt-5 py-5">
         <div class="greatworkimg">
             <img src="/img/greatwork.png" alt="greatwork">
         </div>
-        <div class="text-center font-weight-bold">
+        <div class="text-center font-weight-bold" data-aos="zoom-out-down">
             <div class="countdown my-4 d-flex align-items-center font-weight-bold p-4">
                 <div>
                     <span id="days">269</span>
@@ -139,6 +160,10 @@
             &copy;2020 HSE-AID. All rights reserved
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="/js/app.js"></script>
     <script src="/js/bootstrap-js/jquery.js"></script>
     <script src="/js/bootstrap-js/popper.js"></script>

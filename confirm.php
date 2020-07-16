@@ -18,7 +18,7 @@
     <header class="text-light">
     <nav class="navbar navbar-light container py-md-4">
         <a class="navbar-brand" href="index.php">
-            <img src="img/SafetyLogo.png" width="50" height="40" alt="" loading="lazy">
+            <img src="img/SafetyLogo.png" width="60" height="45" alt="" loading="lazy">
         </a>
     </nav>
    <div class="container confirm text-center">

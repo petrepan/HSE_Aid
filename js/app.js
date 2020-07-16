@@ -34,10 +34,27 @@ function zero(num) {
 
 
 //modal
-const form = document.getElementById("form")
+// Get the modal
+const modal = document.getElementById("myModal");
+const waveImg = document.getElementsByClassName("wave-img");
 
-form.addEventListener("submit", function (e) {
-    const modal = document.getElementById("modal");
-    modal.classList.add("showmodal")
-    modal.classList.remove("hidemodal")
-})
+console.log(waveImg)
+
+for (let i = 0; i < waveImg.length; i++){
+    waveImg[i].addEventListener("click", function () {
+        let modalImg = document.getElementById("img01");
+        let captionText = document.getElementById("caption")
+        document.body.style.height = "100vh!important";
+        document.body.style.overflow = "hidden";
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    })
+}
+
+const span = document.getElementsByClassName("close")[0];
+span.addEventListener("click", function () {
+    modal.style.display = "none";
+    
+        document.body.style.overflow = "auto";
+ })
