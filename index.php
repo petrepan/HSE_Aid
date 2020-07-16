@@ -132,7 +132,7 @@
         <div class="greatworkimg">
             <img src="/img/greatwork.png" alt="greatwork">
         </div>
-        <div class="text-center font-weight-bold" data-aos="zoom-out-down">
+        <div class="text-center font-weight-bold" data-aos="zoom-in">
             <div class="countdown my-4 d-flex align-items-center font-weight-bold p-4">
                 <div>
                     <span id="days">269</span>
