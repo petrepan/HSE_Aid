@@ -10,8 +10,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/safetyapp/css/bootstrap-css/custom.css" />
-    <link rel="stylesheet" href="/safetyapp/css/bootstrap-css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bootstrap-css/custom.css" />
+    <link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css" />
     <title>Safety App</title>
   </head>
   <body>
@@ -23,7 +23,7 @@
     </nav>
    <div class="container confirm text-center">
     <div class="emailimg mx-auto">
-        <img src="/safetyapp/img/undraw_confirmed_81ex.svg" alt="newsletter">
+        <img src="/img/undraw_confirmed_81ex.svg" alt="newsletter">
     </div>
     <h3>
         Thank You!
@@ -39,9 +39,9 @@
             &copy;2020 HSE-AID. All rights reserved
         </div>
     </footer>
-    <script src="/safetyapp/js/app.js"></script>
-    <script src="/safetyapp/js/bootstrap-js/jquery.js"></script>
-    <script src="/safetyapp/js/bootstrap-js/popper.js"></script>
-    <script src="/safetyapp/js/bootstrap-js/bootstrap.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/bootstrap-js/jquery.js"></script>
+    <script src="/js/bootstrap-js/popper.js"></script>
+    <script src="/js/bootstrap-js/bootstrap.js"></script>
   </body>
 </html>
