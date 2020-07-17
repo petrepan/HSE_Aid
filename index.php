@@ -36,11 +36,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap-css/custom.css" />
     <link rel="stylesheet" href="/css/bootstrap-css/bootstrap.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <title>Safety App</title>
+    <title>HSE_Aid | Safety App</title>
+     <meta name="title" content="HSE_Aid | Safety App">
+        <meta name="description" content="Keep your work environment safe with ease.">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://hse-aid.herokuapp.com/">
+        <meta property="og:title" content="HSE_Aid | Safety App">
+        <meta property="og:description" content="Keep your work environment safe with ease.">
+        <meta property="og:image"
+            content="https://res.cloudinary.com/petrepan/image/upload/v1594971879/wavemockup3_2_pwemtb.png">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://hoteltemplate.netlify.app/">
+        <meta property="twitter:title" content="HSE_Aid | Safety App">
+        <meta property="twitter:description" content="Keep your work environment safe with ease">
+        <meta property="twitter:image"
+            content="https://res.cloudinary.com/petrepan/image/upload/v1594971879/wavemockup3_2_pwemtb.png">
   </head>
   <body>
     <header class="text-light">
