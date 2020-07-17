@@ -14,8 +14,9 @@ body {
 }
 
 .wrapper {
-    width: 90%;
+    width: 68%;
     margin: 0 auto;
+    padding: 10px;
 }
 
 
