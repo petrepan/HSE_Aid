@@ -26,6 +26,12 @@ header {
     height: 75vh;
 }
 
+.msg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 .wave-hero {
     height: 650px;

@@ -1,10 +1,20 @@
 <?php
     require('config.php');
 
+    $msg = "";
+    $msgClass = "";
+
     //check for a submit
     if(isset($_POST['submit'])){
         // get form data
         $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $sql_e = "SELECT * FROM emails WHERE email='$email'";
+        $res_e = mysqli_query($conn, $sql_e);
+
+        if(mysqli_num_rows($res_e > 0)){
+            $msg = "Your email has been added already";
+            $msgClass = "alert-danger";
+        }
 
         $sql = "INSERT INTO emails(email) VALUES('$email')";
 
@@ -39,6 +49,9 @@
                     <img src="img/SafetyLogo.png" width="60" height="45" alt="" loading="lazy">
                 </a>
             </nav>
+            <?php if($msg != ''): ?>
+    		<div class="msg alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+    	<?php endif; ?>
             <div class="safety animate__animated animate__rubberBand">
                 <img src="/img/safetyimg.png" alt="safety">
             </div>
