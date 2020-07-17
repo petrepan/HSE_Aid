@@ -11,7 +11,7 @@
         $sql_e = "SELECT * FROM emails WHERE email='$email'";
         $res_e = mysqli_query($conn, $sql_e);
 
-        if(mysqli_num_rows($res_e > 0)){
+        if(mysqli_num_rows($res_e) > 0){
             $msg = "Your email has been added already";
             $msgClass = "alert-danger";
         }
