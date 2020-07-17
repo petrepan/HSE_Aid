@@ -12,8 +12,11 @@
         $res_e = mysqli_query($conn, $sql_e);
 
         if(mysqli_num_rows($res_e) > 0){
-            $msg = "Your email has been added already";
-            $msgClass = "alert-danger";
+            $row = mysqli_fetch_assoc($res_e);
+            if($email == $row['email']){
+                $msg = "Your email has been added already";
+                $msgClass = "alert-danger";
+            }
         }
 
         $sql = "INSERT INTO emails(email) VALUES('$email')";
