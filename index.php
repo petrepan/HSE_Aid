@@ -8,18 +8,14 @@
     if(isset($_POST['submit'])){
         // get form data
         $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $sql_e = "SELECT * FROM emails WHERE email='$email'";
+        $sql_e = "SELECT id FROM emails WHERE email='$email'";
         $res_e = mysqli_query($conn, $sql_e);
 
         if(mysqli_num_rows($res_e) > 0){
-            $row = mysqli_fetch_assoc($res_e);
-            if($email == $row['email']){
                 $msg = "Your email has been added already";
                 $msgClass = "alert-danger";
-            }
-        }
-
-        $sql = "INSERT INTO emails(email) VALUES('$email')";
+        }else{
+             $sql = "INSERT INTO emails(email) VALUES('$email')";
 
         if(mysqli_query($conn, $sql)){
             session_start(); // Start the session
@@ -30,6 +26,8 @@
         }else{
             echo 'ERROR: ' . mysqli_error($conn);
         }
+        }
+
     }
 ?>
 
