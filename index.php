@@ -95,7 +95,7 @@
             </div>
 
             <div id="myModal" class="modal">
-                <span class="close text-white">X</span>
+                <span class="closebtn text-white">X</span>
                 <div class="content-wrap">
                     <img class="modal-content" id="img01">
                 </div>

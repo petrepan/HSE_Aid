@@ -136,7 +136,7 @@ header {
 }
 
 /* The Close Button */
-.close {
+.closebtn {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -147,8 +147,8 @@ header {
     z-index: 10000000000000000;
 }
 
-.close:hover,
-.close:focus {
+.closebtn:hover,
+.closebtn:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
