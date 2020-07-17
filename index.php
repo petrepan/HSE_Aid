@@ -54,7 +54,7 @@
     <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="container mb-2" id="form">
         <div class="position-relative">
             <div class="d-flex">
-                <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 <input type="submit" name="submit" class="btn btn-success" value="Notify me">
             </div>
         </div>
