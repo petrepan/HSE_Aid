@@ -426,6 +426,10 @@ header {
         display: none !important;
     }
 
+    .msg{
+        width: 100%;
+    }
+
 
     .header-text p:first-child {
         font-size: 32px;
