@@ -54,7 +54,7 @@
     <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="container mb-2" id="form">
         <div class="position-relative">
             <div class="d-flex">
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required>
                 <input type="submit" name="submit" class="btn btn-success" value="Notify me">
             </div>
         </div>
@@ -132,7 +132,7 @@
         <div class="greatworkimg">
             <img src="/img/greatwork.png" alt="greatwork">
         </div>
-        <div class="text-center font-weight-bold" data-aos="zoom-in">
+        <div class="text-center font-weight-bold">
             <div class="countdown my-4 d-flex align-items-center font-weight-bold p-4">
                 <div>
                     <span id="days">269</span>
