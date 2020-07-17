@@ -50,9 +50,15 @@
                     <img src="img/SafetyLogo.png" width="60" height="45" alt="" loading="lazy">
                 </a>
             </nav>
+            <div>
             <?php if($msg != ''): ?>
-    		<div class="msg alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
-    	<?php endif; ?>
+                    <div class="msg alert <?php echo $msgClass; ?> alert-dismissible fade show" role="alert"><?php echo $msg; ?></div>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+                    <?php endif; ?>
+            </div>
+            
             <div class="safety animate__animated animate__rubberBand">
                 <img src="/img/safetyimg.png" alt="safety">
             </div>
