@@ -54,7 +54,7 @@
     <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="container mb-2" id="form">
         <div class="position-relative">
             <div class="d-flex">
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required>
                 <input type="submit" name="submit" class="btn btn-success" value="Notify me">
             </div>
         </div>
@@ -90,7 +90,7 @@
                <div class="mockup features-mockup2" data-aos="zoom-out-up">
                    <img class="wave-img" src="/img/featuremockup2.png" alt="General HSE Tracker">
                </div>
-               <div class="mockup features-mockup3" data-aos="zoom-in-left">
+               <div class="mockup features-mockup3" data-aos="zoom-in">
                    <img class="wave-img" src="/img/featuremockup3.png" alt="Job hazard analysis">
                </div>
             </div>

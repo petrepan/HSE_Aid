@@ -535,7 +535,7 @@ header {
 
 @media screen and (max-width: 500px) {
     header {
-        height: 317px;
+        height: 550px;
     }
 
     .header-text h2 {
